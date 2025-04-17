@@ -556,37 +556,36 @@ Vue.component('mission', {
 		'Bulldog g12 JKL destorys LS geo tb: www.youtube.com/watch?v=g_co0UtkMvA',//8
 		],
         modifiers:[
-        'At the beginning of battle, each side summons a random Corellian Engineering Cargo Ship. At the start of their turn, Cargo Ships gain Protection Over Time (10%) for 1 turn.',
-        'Coaxium: +25% Critical Damage and Speed; -15% Accuracy; will be critically hit if able; enemies can ignore Taunt to target this character; if this character is defeated by a status effect, Coaxium will not be granted to anyone',
-        'Enemies start with 5 stacks of Endless Ranks',
-        "Summons probe droids whenever available"
+		'Au début de la bataille, chaque côté invoque un navire de cargaison d\’ingénierie Corellien aléatoire. Au début de leur tour, les navires de charge gagnent Protection sur le temps (10%) pour 1 tour.',
+		'Coaxium: +25% de dégâts critiques et de vitesse; -15% de précision; sera touché si possible; les ennemis peuvent ignorer Taunt pour cibler ce personnage; si ce personnage est vaincu par un effet de statut, le Coaxium ne sera accordé à personne',
+		'Les ennemis commencent avec 5 piles de rangs sans fin',
+	 	'Convoque les droïdes de sonde dès qu\’ils sont disponibles.'
         ],
         notes:[
-        'With Lord Vader\'s ultimate ability, this can be done on full auto',
-        'Unclear if this is even possible right now',
-        "Currently Bugged!",
-        "Currently Bugged! Allows relic 5 Jedi to be used - Potentially Fixed",
-        "Rey is likely a 1/2. Rey 501st can also work.",
-        "Ninth Sister's lead prevents speed limiting effects e.g. jkl",
-        "Need 30 successful attempts each TB to unlock bonus planet - Zeffo",
-        "JKCK is easier than OG Cal, but both are possible."
+		'Avec la capacité ultime de Lord Vader, cela peut être fait en pleine auto',
+		'Pas clair si cela est même possible en ce moment',
+		'Actuellement bugged!',
+	 	'Rey est probablement un 1/2. Rey 501st peut aussi travailler.',
+		'Le verrouillage de la neuvième sœur empêche les effets limiteurs de vitesse, par ex. jkl»',
+		'Besoin de 30 tentatives réussies chaque TB pour débloquer la planète bonus - Zeffo',
+		'JKCK est plus facile que OG Cal, mais les deux sont possibles.'
         ],
         reqs:[
-        'Lord Vader (Relic 5+)',
-        '5x Dark Side or Neutral (Relic 5+)',
-        'Dark Side Ships (7-Star), Scythe',
-        'Dark Side Ships (7-Star)',
-        '5x Dark Side or Neutral (Relic 6+)',//4
-        '5x Geonosian (Relic 7+)',//5
-        '5x characters (Relic 5+)',
-        '5x characters (Relic 5+), Doctor Aphra',
-        '5x characters (Relic 5+), Jabba the Hutt',
-        '5x characters (Relic 5+), Qi\'ra, Young Han Solo',
-        'Lando\'s Millenium Falcon (7-Star)',//10
-        'Light Side Ships (7-Star)',
-        "5x Jedi (Relic 6+)",
-        "5x Light Side or Neutral (Relic 6+)",
-        "Cere Junda (Relic 7+), Any Cal Kestis(Relic 7+)" 
+		'Seigneur Vador (Relique 5+)',
+		'5x Côté Obscur ou Neutre (Relique 5+)',
+		'Vaisseaux du Côté Obscur (7 étoiles), Faux',
+		'Vaisseaux du Côté Obscur (7 étoiles)',
+		'5x Côté Obscur ou Neutre (Relique 6+)',//4
+		'5x Géonosien (Relique 7+)',//5
+		'5x Personnages (Relique 5+)',
+		'5x Personnages (Relique 5+), Docteur Aphra',
+		'5x Personnages (Relique 5+), Jabba le Hutt',
+		'5x Personnages (Relique 5+), Qi\'ra, Han Solo Jeune',
+		'Faucon Millenium de Lando (7 étoiles)',//10
+		'Vaisseaux du Côté Lumineux (7 étoiles)',
+		'5x Jedi (Relique 6+)',
+		'5x Côté Lumineux ou Neutre (Relique 6+)',
+		'Cere Junda (Relique 7+), Tout Cal Kestis (Relique 7+)'
         ],
 		platims:[
         'Phase 2 LS Bracca (self)',
