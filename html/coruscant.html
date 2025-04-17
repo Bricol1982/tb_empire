@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>ROTE - Coruscant</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Interactive Rise of the Empire Territory Battle Map SWGoH">
+	<meta name="description" content="Carte de bataille interactive du territoire de Rise of the Empire SWGoH">
 	<meta name="keywords" content="swgoh, star wars, rote, territory, battle, map, tactics, interactive, tb_geo, genskaar">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,7 +42,7 @@
             </div>
             
             <div class="mb-3" v-if="selectedMission.reqs">
-				<p class="h4">Requirements</p>
+				<p class="h4">Exigences</p>
 					<div v-for="item in selectedMission.reqs">
                         <p>{{reqs[item]}}</p>
                     </div>
@@ -50,7 +50,7 @@
             
             
 			<div class="mb-3" v-if="selectedMission.preferredSquads">
-				<p  class="h4">Preferred teams</p>
+				<p  class="h4">Équipes préférées</p>
 				<div v-for="item in selectedMission.preferredSquads">
                     <p><img v-bind:src="'../media/'+squads[item].videosource+'.png'" onerror="this.src='../media/none.png';" alt="vid" ><a :href="squads[item].video"> {{squads[item].name}}</a></p>
 					<div class="img_block">
@@ -63,22 +63,22 @@
 			</div>
 			
 			<div class="mb-3" v-if="selectedMission.dangerousEnemies">
-				<p class="h4">Wave Breakdown</p>
+				<p class="h4">Répartition des vagues</p>
 				<ul>
 					<li class="text-justify" v-for="item in selectedMission.dangerousEnemies">{{enemies[item]}}</li>
 				</ul>
 			</div>
 
 			<div class="mb-3 " v-if="selectedMission.requiredToons">
-                <p class="h4">Operation Requirements</p>
+                <p class="h4">Exigences opérationnelles</p>
 				<span v-for="item in selectedMission.preqs">&nbsp;&nbsp;{{item}}&nbsp;&nbsp;&nbsp;</span>
 			    
-				<p class="h4">Required toons</p>
+				<p class="h4">Toons requis</p>
 					<div v-for="item in selectedMission.requiredToons" class="row justify-content-center .flex-nowrap">
 							<div class="platoons" v-for="item in platoons[item]">{{item}}</div>
 					</div>
 					
-				<p class="h4"> Affected Territories </p>
+				<p class="h4"> Territoires affectés </p>
 				  
 					  <ul>
 					<li class="text-justify" v-for="item in selectedMission.platzones">{{platims[item]}}</li>
@@ -102,7 +102,7 @@
 			</div>
 			
 			<div class="mb-3" v-if="selectedMission.modifiers">
-				<p class="h4">Important Modifiers</p>
+				<p class="h4">Modificateurs importants</p>
 				<ul>
 					<li class="text-justify" v-for="item in selectedMission.modifiers">{{modifiers[item]}}</li>
 				</ul>
@@ -116,12 +116,12 @@
 
 
 			<div class="rewards mb-3" v-if="selectedMission.rewards">
-				<p class="h4">Rewards</p>
+				<p class="h4">Récompenses</p>
 				<span v-for="item in selectedMission.rewards">&nbsp;&nbsp;{{item}}&nbsp;&nbsp;&nbsp;</span>
 			</div>
             <div class="rewards mb-3" v-if="selectedMission.stars">
                                 <h2>Coruscant</h2>
-				<p class="h4">Star Requirements</p>
+				<p class="h4">Exigences relatives aux étoiles</p>
                 <ul>
 				    <li class="text-justify" v-for="item in selectedMission.stars">{{item}}</li>
                 </ul>
