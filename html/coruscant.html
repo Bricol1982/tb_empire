@@ -42,7 +42,7 @@
             </div>
             
             <div class="mb-3" v-if="selectedMission.reqs">
-				<p class="h4">Requirements</p>
+				<p class="h4">Exigences</p>
 					<div v-for="item in selectedMission.reqs">
                         <p>{{reqs[item]}}</p>
                     </div>
@@ -50,7 +50,7 @@
             
             
 			<div class="mb-3" v-if="selectedMission.preferredSquads">
-				<p  class="h4">Preferred teams</p>
+				<p  class="h4">Équipes préférées</p>
 				<div v-for="item in selectedMission.preferredSquads">
                     <p><img v-bind:src="'../media/'+squads[item].videosource+'.png'" onerror="this.src='../media/none.png';" alt="vid" ><a :href="squads[item].video"> {{squads[item].name}}</a></p>
 					<div class="img_block">
@@ -63,22 +63,22 @@
 			</div>
 			
 			<div class="mb-3" v-if="selectedMission.dangerousEnemies">
-				<p class="h4">Wave Breakdown</p>
+				<p class="h4">Répartition des vagues</p>
 				<ul>
 					<li class="text-justify" v-for="item in selectedMission.dangerousEnemies">{{enemies[item]}}</li>
 				</ul>
 			</div>
 
 			<div class="mb-3 " v-if="selectedMission.requiredToons">
-                <p class="h4">Operation Requirements</p>
+                <p class="h4">Exigences de l'opération</p>
 				<span v-for="item in selectedMission.preqs">&nbsp;&nbsp;{{item}}&nbsp;&nbsp;&nbsp;</span>
 			    
-				<p class="h4">Required toons</p>
+				<p class="h4">Personnages requis</p>
 					<div v-for="item in selectedMission.requiredToons" class="row justify-content-center .flex-nowrap">
 							<div class="platoons" v-for="item in platoons[item]">{{item}}</div>
 					</div>
 					
-				<p class="h4"> Affected Territories </p>
+				<p class="h4">Territoires affectés</p>
 				  
 					  <ul>
 					<li class="text-justify" v-for="item in selectedMission.platzones">{{platims[item]}}</li>
@@ -86,23 +86,10 @@
 				     					  <div>
 				      <img src="../media/platoons/coruscant.png" style="width:512px;height:256px;">
 				      </div>
-					  <!-- <div class="img_block">
-				       <img 
-						v-for="pic in platims[item]"
-						v-bind:src="'../media/platoons/' + pic + '.png'"
-						style="width:120px;height:120px;"
-						>
-				       </div> 
-				       <div v-for= "pic in platims[item]">
-					    <img src="../media/platoons/z1t.png" style="width:200px;height:150px;"> 
-					    
-				       </div>
-				       <img src="../media/mission_KAM.svg" alt="KAM" style="width:42px;height:42px;"> -->
-				   
 			</div>
 			
 			<div class="mb-3" v-if="selectedMission.modifiers">
-				<p class="h4">Important Modifiers</p>
+				<p class="h4">Modificateurs importants</p>
 				<ul>
 					<li class="text-justify" v-for="item in selectedMission.modifiers">{{modifiers[item]}}</li>
 				</ul>
@@ -114,14 +101,13 @@
 				</ul>
 			</div>
 
-
 			<div class="rewards mb-3" v-if="selectedMission.rewards">
-				<p class="h4">Rewards</p>
+				<p class="h4">Récompenses</p>
 				<span v-for="item in selectedMission.rewards">&nbsp;&nbsp;{{item}}&nbsp;&nbsp;&nbsp;</span>
 			</div>
             <div class="rewards mb-3" v-if="selectedMission.stars">
-                                <h2>Coruscant</h2>
-				<p class="h4">Star Requirements</p>
+                <h2>Coruscant</h2>
+				<p class="h4">Exigences d'étoiles</p>
                 <ul>
 				    <li class="text-justify" v-for="item in selectedMission.stars">{{item}}</li>
                 </ul>
@@ -130,7 +116,10 @@
 		</div>
 	</div>
 </template>
-<div class="top-left"><a href="main.html" style="color:#FFFFFF;"> <i class="fa fa-home fa-fw"></i>Full Map </a><br>
+<div class="top-left">
+  <a href="main.html" style="color:#FFFFFF;">
+    <i class="fa fa-home fa-fw"></i>Carte Complète
+  </a><br>
 <script src="../js/vue.min.js"></script>
 <script src="../js/coruscant.js"></script>
 <!-- Google tag (gtag.js) -->
